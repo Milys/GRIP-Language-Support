@@ -1,0 +1,26 @@
+{
+    "name": "grip-language-support",
+    "displayName": "GRIP Language Support",
+    "description": "GRIP language support",
+    "version": "0.0.1",
+    "publisher": "Ml",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "grip",
+            "aliases": ["GRIP", "grip"],
+            "extensions": [".grs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "grip",
+            "scopeName": "source.grs",
+            "path": "./syntaxes/grip.tmLanguage.json"
+        }]
+    }
+}
