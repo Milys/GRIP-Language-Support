@@ -1,12 +1,14 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "GRIP",
-	"patterns": [
-		{
+	"patterns": [{
 			"include": "#keywords"
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -20,12 +22,15 @@
 			"name": "string.quoted.double.grip",
 			"begin": "\"",
 			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.grip",
-					"match": "\\\\."
-				}
-			]
+			"patterns": [{
+				"name": "constant.character.escape.grip",
+				"match": "\\\\."
+			}]
+		},
+		"comments": {
+			"name": "comment.grip",
+			"begin": ";",
+			"end": "\\n"
 		}
 	},
 	"scopeName": "source.grs"
