@@ -29,7 +29,7 @@
 		},
 		"comments": {
 			"name": "comment.grip",
-			"begin": ";",
+			"begin": "$$",
 			"end": "\\n"
 		}
 	},
